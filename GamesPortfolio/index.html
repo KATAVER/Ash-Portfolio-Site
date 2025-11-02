@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ash's Portfolio</title>
+
+    <!-- Fonts & CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+<canvas id="bg"></canvas>
+
+<!-- Navigation Bar -->
+<nav class="top-nav">
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <!-- Header -->
+    <header class="fade-element">
+        <h1>Ashley Rodriguez</h1>
+        <p>Level and Gameplay Designer</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="fade-element">
+        <h2>About Me</h2>
+        <p>
+            I’m a junior majoring in Game Development and Interactive Media and minoring in Disruptive Innovation
+            at the University of Southern California, as well as a proud Hispanic Scholarship Fund Scholar. I’ve
+            been learning about game development and creating games both solo and in teams for three years. Thanks
+            to a program at my school called AGP, I’m familiar with the full development and production cycle of
+            making a game in a short amount of time and the dedication, communication, and coordination it requires.
+            I’ve gained experience in a variety of roles, including Level Designer, Co-Director, VFX and Tech Artist,
+            and most recently, Design Lead on my biggest project yet! When I’m not working on games, you can find me
+            baking at home or practicing MMA at the gym.
+        </p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="fade-element">
+        <h2>Portfolio</h2>
+        <div class="portfolio-carousel">
+            <div class="carousel-track">
+
+                <!-- HyperDrift Hazard -->
+                <div class="carousel-item"
+                     data-title="HyperDrift Hazard"
+                     data-description="Hyperdrift Hazard is a fast-paced 3D platformer where the player must navigate through complex courses and spot OSHA violations to earn points in as little time as possible.  <br><br> I worked side by side with a partner as co-director with a focus on level design and art direction."
+                     data-images="img.png, Hazard.png, Game1.png, Game1.1.png, Game1.3.png, Game1.2.png">
+                    <img src="Game1.png" alt="Game1">
+                </div>
+
+                <!-- Donuts -->
+                <div class="carousel-item"
+                     data-title="Donuts!"
+                     data-description="Drive, stunt, and deliver your way to saving your family’s slowing donut business in this radical arcade driving/skateboarding adventure meets food delivery service! <br><br> I worked as a Tech Artist on this project.<br><br>
+<a href='https://donutsthegame.com/' target='_blank' rel='noopener noreferrer'>donutsthegame.com</a><br>
+<a href='https://store.steampowered.com/app/3658570/Donuts/' target='_blank' rel='noopener noreferrer'>store.steampowered.com/app/3658570/Donuts/</a>"
+                     data-images="game2.1.png, donut.png, game2.2.png, game2.3.png, game2.4.png, game2.5.png">
+                    <img src="donut.png" alt="Donuts!">
+                </div>
+
+                <!-- Drenched -->
+                <div class="carousel-item"
+                     data-title="Drenched"
+                     data-description="You play as the spirit of an uninspired artist embodied as a fish. Switching between controlling the fish under water and the little girl on the surface, the player works to help the two of them reunite. <br><br> Set to release in May 2026! <br><br> Working as Design Lead on this project."
+                     data-images="img_3.png, drenched.jpg, img_4.png">
+                    <img src="drenched.jpg" alt="Drenched">
+                </div>
+
+                <!-- Momentum -->
+                <div class="carousel-item"
+                     data-title="Momentum"
+                     data-description="Superhero action fighting game saving civilian lives and defeating bad guys all while avoiding casualties in a city. <br><br> I worked as a UI artist on this project."
+                     data-video="momentum.mov"
+                     data-images="game4.png, game4.4.png, game4.1.png, game4.3.png, game4.2.png">
+                    <img src="game4.4.png" alt="Momentum">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Portfolio Items -->
+    <div id="portfolio-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-title"></h3>
+            <div class="modal-images"></div>
+            <p id="modal-description"></p>
+            <div id="modal-links" class="modal-links"></div>
+        </div>
+    </div>
+
+    <!-- Experience Section -->
+    <section id="experience" class="fade-element">
+        <h2>Work Experience</h2>
+
+        <div class="experience-item">
+            <h3>Game Design Lead – MFA Thesis Project: <em>Drenched</em>, USC</h3>
+            <ul>
+                <li>Lead design of core gameplay loop and mechanics, focusing on player engagement and fun.</li>
+                <li>Foster team creativity while keeping projects aligned with core design pillars and deadlines.</li>
+                <li>Ensure clear communication and collaboration across the team.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <h3>Student Assistant – USC Games Department</h3>
+            <ul>
+                <li>Supported lectures, assignments, grading, and classroom management for game development and intro coding courses.</li>
+                <li>Tutored students, held office hours, and organized course materials.</li>
+                <li>Collaborated with instructors on lesson preparation.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <h3>Network & Camera Operator – USC</h3>
+            <ul>
+                <li>Managed cameras and streaming platforms to ensure reliable lecture broadcasts.</li>
+                <li>Prepared materials and setups for recordings and presentations.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <h3>Event Site Supervisor – USC Recreational Sports</h3>
+            <ul>
+                <li>Supervised special events, ensuring policies were followed and attendees received support.</li>
+                <li>Acted as first point of contact for event-related inquiries.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="fade-element">
+        <h2>Resume</h2>
+        <p>You can view my resume below or download a copy:</p>
+        <a href="/Ashley Rodriguez_Resume (2).pdf" download class="resume-button">Download Resume</a>
+        <embed src="/Ashley Rodriguez_Resume (2).pdf" type="application/pdf" width="100%" height="800px" />
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-element">
+        <h2>Contact Me</h2>
+        <p>
+            Gmail: <a href="mailto:rodriguez.ao027@gmail.com">rodriguez.ao027@gmail.com</a><br>
+            LinkedIn: <a href="https://www.linkedin.com/in/ashley-rodriguez-819876248/" target="_blank" rel="noopener noreferrer">
+            linkedin.com/in/ashley-rodriguez-819876248
+        </a><br>
+            Discord: <a href="https://discord.com/users/722605751880646722" target="_blank" rel="noopener noreferrer">
+            kataverix
+        </a>
+        </p>
+    </section>
+</main>
+
+<!-- Scripts -->
+<script type="module" src="/src/main.js"></script>
+<script>
+    // Scroll-triggered fade-in
+    const faders = document.querySelectorAll('.fade-element');
+    const appearOptions = { threshold: 0.15, rootMargin: "0px 0px -50px 0px" };
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
+        });
+    }, appearOptions);
+    faders.forEach(fader => appearOnScroll.observe(fader));
+
+    // Modal logic
+    const modal = document.getElementById("portfolio-modal");
+    const modalTitle = document.getElementById("modal-title");
+    const modalDesc = document.getElementById("modal-description");
+    const modalImagesContainer = document.querySelector(".modal-images");
+    const modalLinksContainer = document.getElementById("modal-links");
+    const closeBtn = modal.querySelector(".close");
+
+    document.querySelectorAll(".carousel-item").forEach(item => {
+        item.addEventListener("click", () => {
+            modalTitle.textContent = item.dataset.title;
+
+            // Clear previous content
+            modalDesc.innerHTML = "";
+            modalImagesContainer.innerHTML = "";
+            modalLinksContainer.innerHTML = "";
+
+            // Split description & links if <br><br> is used
+            const descParts = item.dataset.description.split("<br><br>");
+            modalDesc.innerHTML = descParts[0];
+            if (descParts.length > 1) {
+                modalLinksContainer.innerHTML = descParts.slice(1).join("<br><br>");
+            }
+
+            // Add video if present
+            if (item.dataset.video) {
+                const video = document.createElement("video");
+                video.src = item.dataset.video.trim();
+                video.controls = true;
+                video.style.width = "100%";
+                video.style.maxWidth = "600px";
+                video.style.borderRadius = "14px";
+                video.style.marginBottom = "1rem";
+                modalImagesContainer.appendChild(video);
+            }
+
+            // Add images
+            const images = item.dataset.images ? item.dataset.images.split(",") : [];
+            images.forEach(src => {
+                const img = document.createElement("img");
+                img.src = src.trim();
+                img.alt = item.dataset.title;
+                img.style.width = "100%";
+                img.style.maxWidth = "600px";
+                img.style.borderRadius = "14px";
+                img.style.marginBottom = "1rem";
+                modalImagesContainer.appendChild(img);
+            });
+
+            // Special case: HyperDrift Hazard YouTube embed
+            if (item.dataset.title === "HyperDrift Hazard") {
+                const iframe = document.createElement("iframe");
+                iframe.src = "https://www.youtube.com/embed/Qate7ukXu78";
+                iframe.width = "560";
+                iframe.height = "315";
+                iframe.allow =
+                    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+                iframe.allowFullscreen = true;
+                iframe.style.borderRadius = "12px";
+                iframe.style.marginTop = "1.5rem";
+                modalImagesContainer.appendChild(iframe);
+            }
+
+            modal.style.display = "block";
+        });
+    });
+
+    closeBtn.onclick = () => modal.style.display = "none";
+    window.onclick = event => { if (event.target == modal) modal.style.display = "none"; }
+</script>
+</body>
+</html>
