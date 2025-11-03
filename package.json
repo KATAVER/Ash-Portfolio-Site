@@ -1,0 +1,14 @@
+{
+  "name": "gamesportfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "GamesPortfolio/node_modules/.bin/vite",
+    "build": "GamesPortfolio/node_modules/.bin/vite build",
+    "preview": "GamesPortfolio/node_modules/.bin/vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.1.2"
+  }
+}
