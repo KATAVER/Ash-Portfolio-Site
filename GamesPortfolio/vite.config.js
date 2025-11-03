@@ -1,3 +1,5 @@
-export default {
-    base: '/Ash-Portfolio-Site/', // repo name
-};
+import { defineConfig } from "vite";
+
+export default defineConfig({
+    base: "/Ash-Portfolio-Site/", // your repo name
+});
