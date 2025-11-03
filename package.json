@@ -1,0 +1,27 @@
+{
+  "name": "ash-portfolio-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "vite": "^7.1.12"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npx gh-pages -d dist --no-history"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KATAVER/Ash-Portfolio-Site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KATAVER/Ash-Portfolio-Site/issues"
+  },
+  "homepage": "https://kataver.github.io/Ash-Portfolio-Site/"
+}
