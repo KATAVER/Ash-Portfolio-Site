@@ -14,5 +14,8 @@
   },
   "dependencies": {
     "three": "^0.181.0"
+  },
+  "scripts": {
+    "deploy": "git subtree push --prefix dist origin gh-pages"
   }
 }
